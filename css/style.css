@@ -10711,6 +10711,7 @@ ul.nav-tabs > li.tab-button > a:hover::after { opacity: 1; }
 /* Image Block
 ----------------------------------------------------------------------------- */
 .skills-block-container .image-block { margin-bottom: 25px !important; }
+.skills-block-container .image-block img:hover { opacity: .7; }
 
 
 /* Title
@@ -10720,7 +10721,7 @@ ul.nav-tabs > li.tab-button > a:hover::after { opacity: 1; }
 
 /* Link
 ----------------------------------------------------------------------------- */
-.skills-block-container h4 a { color: #121212; }
+.skills-block-container h4 a { color: white; }
 .skills-block-container h4 a:hover { color: #d32f2f; }
 
 
@@ -11472,9 +11473,10 @@ ul.nav-tabs > li.tab-button > a:hover::after { opacity: 1; }
 /* Container
 ----------------------------------------------------------------------------- */
 .cta-block-style-4 .cta-block-container {
-    margin: 0 auto;
-    padding: 40px 0;
-    background-color: #d32f2f;
+    margin: 0px auto;
+    padding: 5px 0;
+    background-color: #3b9adb;
+    margin-bottom: 20px !important;
 }
 
 
@@ -11485,12 +11487,14 @@ ul.nav-tabs > li.tab-button > a:hover::after { opacity: 1; }
 
 /* Title
 ----------------------------------------------------------------------------- */
-.cta-block-style-4 .cta-block-container h3 { padding-top: 5px; }
+.cta-block-style-4 .cta-block-container h3 { padding-top: 10px; font-size: 16px; text-align: center; font-weight: normal;}
+.cta-block-style-4 .cta-block-container h3 a {color: white; font-weight: bold;}
+.cta-block-style-4 .cta-block-container h3 a:hover {color: black;}
 
 
 /* Button
 ----------------------------------------------------------------------------- */
-.cta-block-style-4 .cta-block-container a.btn { margin-top: 15px; }
+.cta-block-style-4 .cta-block-container a.btn { margin-top: 5px; }
 
 
 

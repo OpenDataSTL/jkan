@@ -1,52 +1,52 @@
-- name: Arts / Culture / History
-  logo: /img/categories/arts-culture-history.svg
-  featured: false
-- name: Budget / Finance
-  logo: /img/categories/budget-finance.svg
+- name: Culture
+  logo: /images/categories/arts-culture-history.png
+  featured: true
+- name: Budget
+  logo: /images/categories/budget-finance.png
   logo_credit: Renan Ferreira Santos from the Noun Project
   featured: true
 - name: Economy
-  logo: /img/categories/economy.svg
+  logo: /images/categories/economy.svg
   logo_credit: Vectors Market from the Noun Project
-  featured: true
+  featured: false
 - name: Education
-  logo: /img/categories/education.svg
+  logo: /images/categories/education.svg
   logo_credit: Sergey Patutin from the Noun Project
   featured: false
-- name: Elections / Politics
-  logo: /img/categories/elections-politics.svg
+- name: Elections
+  logo: /images/categories/elections-politics.png
   logo_credit: Jean Soo from the Noun Project
   featured: true
 - name: Environment
-  logo: /img/categories/environment.svg
+  logo: /images/categories/environment.svg
   featured: false
 - name: Food
-  logo: /img/categories/food.svg
+  logo: /images/categories/food.svg
   logo_credit: Creative Stall from the Noun Project
   featured: false
-- name: Health / Human Services
-  logo: /img/categories/health-human-services.svg
+- name: Health
+  logo: /images/categories/health-human-services.png
   logo_credit: Timothy Miller from the Noun Project
   featured: true
 - name: Parks / Recreation
-  logo: /img/categories/parks-recreation.svg
+  logo: /images/categories/parks-recreation.svg
   logo_credit: Pipe Rosas Licht from the Noun Project
   featured: false
 - name: Planning / Zoning
-  logo: /img/categories/planning-zoning.svg
+  logo: /images/categories/planning-zoning.svg
   featured: false
 - name: Public Safety
-  logo: /img/categories/public-safety.svg
+  logo: /images/categories/public-safety.png
   logo_credit: Rohith M S from the Noun Project
   featured: true
 - name: Real Estate / Land Records
-  logo: /img/categories/real-estate-land-records.svg
+  logo: /images/categories/real-estate-land-records.svg
   featured: false
 - name: Transportation
-  logo: /img/categories/transportation.svg
+  logo: /images/categories/transportation.png
   logo_credit: Dmitry Baranovskiy from the Noun Project
   featured: true
 - name: Uncategorized
-  logo: /img/categories/uncategorized.svg
+  logo: /images/categories/uncategorized.svg
   logo_credit: Edward Boatman from the Noun Project
   featured: false
