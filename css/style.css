@@ -630,8 +630,8 @@ p:last-of-type { margin-bottom: 0; }
 ============================================================================= */
 .sm-p,
 .hero-section .title-block-container.text-center p.sm-p {
-    font-size: 22px;
-    line-height: 1.5;
+    font-size: 20px;
+    line-height: 1.2;
 }
 
 
@@ -2155,7 +2155,7 @@ a.btn-gfort-image:hover {
 
 /* Small Padding
 ----------------------------------------------------------------------------- */
-.section-sm-padding > .section-container { padding: 125px 0 95px !important; }
+.section-sm-padding > .section-container { padding: 100px 0 95px !important; }
 
 
 /* XSmall Padding
@@ -4125,7 +4125,7 @@ nav.gfort-pagination ul.pagination > .disabled > span:hover {
 /* Hero Section
 ----------------------------------------------------------------------------- */
 .hero-section .title-block-container.text-center {
-    font-size: 26px;
+    font-size: 20px;
     letter-spacing: 0.5px;
 }
 .hero-section .title-block-container.text-center a.btn { margin-top: 65px; }
@@ -4154,7 +4154,7 @@ nav.gfort-pagination ul.pagination > .disabled > span:hover {
 .title-block-container h1 { margin-top: -5px; }
 .title-block-container.text-center h1 {
     line-height: 1;
-    font-size: 60px;
+    font-size: 42px;
     margin-bottom: 20px;
     letter-spacing: -1px;
 }
