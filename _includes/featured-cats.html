@@ -1,0 +1,71 @@
+            <div id="skills-section-3" class="skills-section white-section">
+                <!-- Section Container -->
+                <div class="section-container">
+
+
+                    <!-- Background Image Block -->
+                    <div class="background-image-block parallax-effect gfort-background">
+                        <img src="images/skills/skills-008.jpg" alt="Parallax Background Image" style="top: -141px; transform: translate(-50%, 0px);">
+                    </div><!-- /End Background Image Block -->
+
+
+                    <!-- container -->
+                    <div class="container">
+                        <!-- row -->
+                        <div class="row">
+
+
+                            <!-- Title Block -->
+                            <div class="col-lg-10 col-lg-offset-1 col-md-12 title-block">
+                                <!-- Title Block Container -->
+                                <div class="title-block-container white-content text-center">
+
+                                    <!-- Title -->
+                                    <h2>I'M GOOD AT</h2>
+
+                                    <!-- Description -->
+                                    <p>Release bandwidth user experience research &amp; development branding termsheet business plan advisor analytics ecosystem entrepreneur freemium.</p>
+
+                                    <!-- Line Separator -->
+                                    <div class="line-separator"></div>
+
+                                </div><!-- /End Title Block Container -->
+                            </div><!-- /End Title Block -->
+                            
+                            {% for category in site.data.categories %}
+                              {% if category.featured == true %}
+
+                            <!-- Skills Block -->
+                            <div class="col-md-2 col-sm-4 col-xs-6 col-gfort-xs-6 skills-block">
+                                <!-- Skills Block Container -->
+                                <div class="skills-block-container white-content text-center">
+
+                                    <!-- Image Block -->
+                                    <div class="image-block">
+                                        <!-- Image Block Container -->
+                                        <div class="image-block-container">
+                                                <a href="{{ site.baseurl }}/datasets/?category={{ category.name | slugify }}">
+                                                  {% if category.logo and category.logo != empty %}
+                                                    <img src="{{ site.baseurl }}{{ category.logo }}" alt="{{ logo_alt }}">
+                                                  {% endif %}
+                                                  
+                                                </a>
+ 
+                                        </div><!-- /End Image Block Container -->
+                                    </div><!-- /End Image Block -->
+
+                                    <!-- Title -->
+                                    <h4><a href="{{ site.baseurl }}/datasets/?category={{ category.name | slugify }}">{{ category.name }}</a></h4>
+
+                                </div><!-- /End Skills Block Container -->
+                            </div><!-- /End Skills Block -->
+                              {% endif %}
+                            {% endfor %}
+
+
+                        </div><!-- /End row -->
+                    </div><!-- /End container -->
+
+
+                </div><!-- /End Section Container -->
+            </div>
