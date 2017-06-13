@@ -12843,3 +12843,6 @@ ol.breadcrumb > li.active { color: #515151; }
 img.org-logo {
     max-width: 150px;
 }
+
+/* notie */
+.select2-selection__choice { border: none;}

@@ -37,7 +37,7 @@
     {% include dataset-form-resource.html %}
     </script>
   </div>
-
+<div class="section-container">
   <fieldset>
     <h2>Additional Info</h2>
 
@@ -51,8 +51,10 @@
     {% endfor %}
 
   </fieldset>
+  
+</div>
 
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-gfort-lg btn-gfort wave-effect">Submit</button>
   {% if include.dataset %}
     <button class="btn btn-danger" data-component="delete-page-button" data-file-path="{{ include.dataset.path }}">
       <i class="fa fa-trash"></i> Delete dataset
