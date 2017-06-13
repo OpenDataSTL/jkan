@@ -13,34 +13,14 @@ layout: default
 
 <div data-component="view-switcher">
   <div class="row" data-component="dataset-display" data-hook="view" data-view="display" typeof="dcat:Dataset" resource="{{ page.url }}">
-    {% if organization %}
-      <div class="col-sm-3" property="dct:publisher" resource="{{ organization_url }}">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-              {% if organization.logo and organization.logo != empty %}
-              <a href="{{ site.baseurl }}/datasets/?organization={{ organization.title | slugify }}" class="thumbnail"><img src="{{ organization.logo }}" alt="{{ organization.title }} logo"></a>
-              {% endif %}
-            </div>
-            <div class="panel-body">
-              <h3>
-                <a href="{{ organization_url }}" about="{{ organization_url }}" property="foaf:homepage">
-                  <span property="foaf:name">{{ organization.title }}</span>
-                </a>
-              </h3>
-              {{ organization.description }}
-            </div>
-          </div>
-        </div>
+
     <div class="col-sm-9">
-    {% else %}
-    <div class="col-sm-12">
-    {% endif %}
       <h1>
         <span property="dct:title">{{ page.title }}</span>
-        <a href="?view=edit" class="pull-right btn btn-default admin-only" data-hook="edit-dataset-btn">Edit</a>
       </h1>
       <p property="dct:description">{{ page.notes }}</p>
-
+      <hr >
+      
       <h2>Resources</h2>
       <ul>
         {% for resource in page.resources %}
@@ -69,45 +49,55 @@ layout: default
         </li>
         {% endfor %}
       </ul>
-
-      <h2>Additional Info</h2>
-      <table class="table table-striped dataset-details">
-        {% if page.license and page.license != empty %}
-          <tr>
-            <th>License</th>
-            <td>
-              <a property="dct:license" resource="{{ page.license }}" href="{{ page.license }}">
-                {{ site.data.licenses[page.license] }}
-              </a>
-            </td>
-          </tr>
-        {% endif %}
-        {% for field in dataset_fields %}
-          {% unless dataset_system_fields contains field.field_name %}
-            {% assign value = page[field[field_name]] %}
-            {% if value %}
-              {% if field.display_template %}
-                {% include {{ field.display_template }} field=field value=value %}
-              {% else %}
-                <tr>
-                  <th>{{ field.label }}</th>
-                  <td>{{ value }}</td>
-                </tr>
+      <hr >
+        <h2>Additional Info</h2>
+        <table class="table table-striped dataset-details">
+          {% if page.license and page.license != empty %}
+            <tr>
+              <th>License</th>
+              <td>
+                <a property="dct:license" resource="{{ page.license }}" href="{{ page.license }}">
+                  {{ site.data.licenses[page.license] }}
+                </a>
+              </td>
+            </tr>
+          {% endif %}
+          {% for field in dataset_fields %}
+            {% unless dataset_system_fields contains field.field_name %}
+              {% assign value = page[field[field_name]] %}
+              {% if value %}
+                {% if field.display_template %}
+                  {% include {{ field.display_template }} field=field value=value %}
+                {% else %}
+                  <tr>
+                    <th>{{ field.label }}</th>
+                    <td>{{ value }}</td>
+                  </tr>
+                {% endif %}
               {% endif %}
-            {% endif %}
-          {% endunless %}
-        {% endfor %}
+            {% endunless %}
+          {% endfor %}
 
-      </table>
+        </table>
+        
     </div>
-  </div>
-
-  <div class="row" data-hook="view" data-view="edit">
-    <div class="col-sm-8 col-sm-offset-2">
-      {% include dataset-form.html dataset=page %}
-    </div>
-    <div class="col-sm-2">
-      <a href="{{ site.baseurl }}{{ page.url }}" class="btn btn-default pull-right">Cancel</a>
+    <div class="col-sm-3" property="dct:publisher" resource="{{ organization_url }}">
+         <div class="panel panel-default">
+             <div class="panel-body">
+               {% if organization.logo and organization.logo != empty %}
+               <a href="{{ site.baseurl }}/datasets/?organization={{ organization.title | slugify }}" class="thumbnail"><img src="{{ organization.logo }}" alt="{{ organization.title }} logo"></a>
+               {% endif %}
+             </div>
+             <div class="panel-heading">
+               <h3>
+                 <a href="{{ organization_url }}" about="{{ organization_url }}" property="foaf:homepage">
+                   <span property="foaf:name">{{ organization.title }}</span>
+                 </a>
+               </h3>
+               {{ organization.description }}
+             </div>
+           </div>
+         
     </div>
   </div>
 </div>
