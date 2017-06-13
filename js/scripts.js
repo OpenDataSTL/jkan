@@ -73,7 +73,7 @@ flickrUserID = '136162511@N05';
 notificationExpireDays = 10;
 
 // Smooth Scroll ( true / false )
-pageSmoothScroll = true;
+pageSmoothScroll = false;
 
 
 googleMapAPIKey = 'AIzaSyBDGULVau4J4Chpc4DmyfwKoz3XRUwsEOQ';

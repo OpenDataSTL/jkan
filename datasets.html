@@ -14,10 +14,13 @@ permalink: /datasets/
     <h3>Organizations</h3>
     <div class="list-group" data-component="organizations-filter" data-show="15"></div>
   </div>
-  <div class="col-sm-8" data-component="datasets-list">
+  <div class="col-sm-6" data-component="datasets-list">
     <h3 class="datasets-count" data-hook="datasets-count"></h3>
-    <a href="{{ site.baseurl }}/add-dataset/" class="btn btn-default pull-right admin-only" data-hook="add-dataset-btn"><i class="fa fa-plus"></i> Add Dataset</a>
-    <input type="text" data-hook="search-query" placeholder="Search..." class="form-control">
+    <input type="text" data-hook="search-query" placeholder="Search..." class="form-control" style="border-bottom: 1px solid #d32f2f">
+    <br />
     <div data-hook="datasets-items"></div>
+  </div>
+  <div class="col-sm-2">
+      <a href="{{ site.baseurl }}/add-dataset/" class="btn btn-default pull-right admin-only" data-hook="add-dataset-btn"><i class="fa fa-plus"></i> Add Dataset</a>
   </div>
 </div>
