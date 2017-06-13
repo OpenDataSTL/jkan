@@ -25,7 +25,7 @@ export default State.extend({
   initiateLogin: function () {
     const redirectParams = {
       client_id: this.clientId,
-      redirect_uri: window.location.href.split('?')[0],
+      redirect_uri: function getRootUrl() {return window.location.origin?window.location.origin+'/':window.location.protocol+'/'+window.location.host+'/';},
       scope: 'public_repo'
     }
     window.location.href = githubLoginUrl + '?' + $.param(redirectParams)
