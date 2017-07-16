@@ -1,15 +1,17 @@
 ---
 schema: default
 title: STL Crime Data
-organization: Sample Department
-notes: testing
+organization: STLMPD
+notes: >-
+  A repo to scrape and store the crime data from the St. Louis Metropolitan
+  Police Departments website.
 resources:
-  - name: STMPD Crime Reports
-    url: 'http://www.slmpd.org/Crimereports.shtml'
-    format: html
+  - name: STL crime data
+    url: 'https://github.com/OpenDataSTL/stl-crime-data'
+    format: csv
 license: ''
 category:
   - Public Safety
-maintainer: STMPD
-maintainer_email: abhi.nemani@gmail.com
+maintainer: Nehemiah I. Dacres
+maintainer_email: vivacarlie@gmail.com
 ---
