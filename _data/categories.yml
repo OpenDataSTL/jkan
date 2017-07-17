@@ -18,7 +18,6 @@
 - name: Environment
   logo: /images/categories/environment.svg
   logo_credit: ''
-  featured: true
 - name: Food
   logo: /images/categories/food.svg
   logo_credit: Creative Stall from the Noun Project
@@ -36,8 +35,8 @@
   logo: /images/categories/public-safety.png
   logo_credit: Rohith M S from the Noun Project
   featured: true
-- name: Real Estate / Land Records
-  logo: /images/categories/real-estate-land-records.svg
+- name: Properties
+  logo: /images/categories/real-estate-land-records.png
   logo_credit: ''
   featured: true
 - name: Transportation
