@@ -13,7 +13,7 @@ license: ''
 category:
   - Planning / Zoning
   - Public Safety
-  - Real Estate / Land Records
+  - Properties
 maintainer: ''
 maintainer_email: ''
 ---
