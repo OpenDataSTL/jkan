@@ -76,7 +76,7 @@
                                         			      		html += '</div>'
                                                                 html += '<small>' + moment.utc(data['time']).format('DD MMMM YYYY') + '</small>'
                                         			      		html += '<h4><a href="' + data['event_url'] +'" title="' + data['name'] +'">' + data['name'] +'</a></h4>'
-                                        			      		html += '<p>' + data['description'] + '</p>'
+                                        			      		html += '<p>' + data['description'].substr(0, 300) + '</p>'
                                         			      		html += '<a href="https://www.meetup.com/Open-Data-STL/events/psjxklywkbhc/" title="Demo" class="btn btn-gfort-sm btn-gfort-white btn-gfort wave-effect" style="margin-top: 0px;">RSVP</a>'
                                         		      		html += '</div>'
                                         	      		html += '</div>'
