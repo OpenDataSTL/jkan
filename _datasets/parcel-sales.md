@@ -1,17 +1,16 @@
 ---
 schema: default
-title: Building Inspections
+title: Parcel Sales
 organization: City of St. Louis
 notes: >-
-  CSV Files of building inspection records
+  Parcel Sales data
 resources:
-  - name: ' CSVs'
-    url: 'https://github.com/OpenDataSTL/stl-building-inspections'
+  - name: 'CSVs of parcel sales'
+    url: 'https://github.com/OpenDataSTL/stl-parcel-sales'
     format: csv
 license: ''
 category:
   - Planning / Zoning
-  - Public Safety
   - Properties
 maintainer: ''
 maintainer_email: ''
