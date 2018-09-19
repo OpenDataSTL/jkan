@@ -31,7 +31,7 @@ headerScroll = 'normal';
 parallaxEffect = true;
 
 // Mailchimp list URL
-mailchimpListURL = 'http://openstl.us16.list-manage.com/subscribe/post?u=8a21533be6eae4f44c343ecea&amp;id=49f69d4e29';
+mailchimpListURL = 'https://openstl.us16.list-manage.com/subscribe/post?u=8a21533be6eae4f44c343ecea&amp;id=49f69d4e29';
 
 // Your Website recaptcha Key
 recaptchaSiteKey = '6LdHCQwTAAAAAK0HvYvQJ5oA_9W-vlv5A41xBEGp';
