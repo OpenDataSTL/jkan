@@ -1,12 +1,13 @@
 title: OpenSTL
 greeting: OpenSTL
 description: A delightfully simple way to find data from your city.
-url: https://openstl.org    
+url: https://openstl.org
+name="google-site-verification" content="yt9s1Zu7Kk5qIZ1wHVLJuA50S6oLpmSIUb0fbZoCF-4" 
 
 # Authentication
 github_client_id: a37def6e53ed04b098ee
 gatekeeper_host: https://openstl.herokuapp.com
-name="google-site-verification" content="yt9s1Zu7Kk5qIZ1wHVLJuA50S6oLpmSIUb0fbZoCF-4" 
+
 
 # Dataset schema
 schema: default
